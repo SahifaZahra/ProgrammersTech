@@ -2,11 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const cells = document.querySelectorAll('.gridBox');
     const playerXScoreElement = document.getElementById('playerX');
     const playerOScoreElement = document.getElementById('playerO');
+    const modal = document.getElementById('modal');
+    const modalMessage = document.getElementById('modalMessage');
+    const closeButton = document.getElementById('closeBtn');
 
     let playerXScore = 0;
     let playerOScore = 0;
-    let initialTurn = 'X';
-    let turnsCount = 0;
+    let currentPlayer = 'X';
+    let gameActive = true;
 
     const winningCombinations = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -15,26 +18,27 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     cells.forEach(gridBox => gridBox.addEventListener('click', handleCellClick));
+    restartButton.addEventListener('click', restartGame);
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+        restartGame();
+    });
 
     function handleCellClick(e) {
         const gridBox = e.target;
-        if (gridBox.textContent) return;
+        if (gridBox.textContent || !gameActive) return;
 
-        gridBox.textContent = initialTurn;
-        turnsCount++;
-
-        setTimeout(() => {
-            if (checkWin(initialTurn)) {
-                alert(`${initialTurn} wins!`);
-                updateScore();
-                resetGame();
-            } else if (isDraw()) {
-                alert('Draw!');
-                resetGame();
-            } else {
-                initialTurn = initialTurn=== 'X' ? 'O' : 'X';
-            }
-        }, 100);
+        gridBox.textContent = currentPlayer;
+        if (checkWin(currentPlayer)) {
+            gameActive = false;
+            updateScore();
+            setTimeout(() => showModal(`Player ${currentPlayer} Wins!`), 100); 
+        } else if (isDraw()) {
+            gameActive = false;
+            setTimeout(() => showModal('Its a Tie! Great Game!'), 100);
+        } else {
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        }
     }
 
     function checkWin(player) {
@@ -44,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function isDraw() {
-        return turnsCount === 9;
+        return [...cells].every(gridBox => gridBox.textContent);
     }
 
     function updateScore() {
-        if (initialTurn === 'X') {
+        if (currentPlayer === 'X') {
             playerXScore++;
             playerXScoreElement.textContent = `Player X: ${playerXScore}`;
         } else {
@@ -57,20 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function resetGame() {
-        cells.forEach(gridBox => gridBox.textContent = '');
-        initialTurn = 'X';
-        turnsCount = 0;
+    function showModal(message) {
+        modalMessage.textContent = message;
+        modal.style.display = 'block';
     }
 
-    restartButton.addEventListener('click', restartGame);
-
     function restartGame() {
-        resetGame();
-        playerXScore = 0;
-        playerOScore = 0;
-        playerXScoreElement.textContent = `Player X: ${playerXScore}`;
-        playerOScoreElement.textContent = `Player O: ${playerOScore}`;
+        cells.forEach(gridBox => gridBox.textContent = '');
+        currentPlayer = 'X';
+        gameActive = true;
     }
 });
 
