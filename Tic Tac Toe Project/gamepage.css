@@ -22,6 +22,7 @@ body {
     position: absolute;
     top: 0;
 }
+
 .gameContainer {
     padding: 20px;
     max-width: 90%;
@@ -87,11 +88,12 @@ h1 {
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    width: 100%; 
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
+
 .btn {
     height: 35px;
     width: 130px;
@@ -111,9 +113,10 @@ h1 {
     cursor: pointer;
     border: 2px solid white;
 }
+
 .modalBox {
     max-width: 300px;
-    margin: auto; 
+    margin: auto;
     padding: 30px;
     background-color: white;
     border: 2px solid black;
@@ -133,7 +136,7 @@ h1 {
     font-size: 32px;
     font-weight: bolder;
     transition: all 0.3s;
-    
+
 }
 
 #modalMessage {

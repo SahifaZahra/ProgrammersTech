@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (checkWin(currentPlayer)) {
             gameActive = false;
             updateScore();
-            setTimeout(() => showModal(`Player ${currentPlayer} Wins!`), 100); 
+            setTimeout(() => showModal(`Player ${currentPlayer} Wins!`), 100);
         } else if (isDraw()) {
             gameActive = false;
             setTimeout(() => showModal('Its a Tie! Great Game!'), 100);
