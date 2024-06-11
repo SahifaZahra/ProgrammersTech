@@ -125,12 +125,13 @@ header {
     font-weight: 700;
     font-size: 14px;
 }
-.cv-btn a:hover
-{
+
+.cv-btn a:hover {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s;
 }
+
 .aboutSection {
     height: auto;
     width: 60vw;
@@ -162,7 +163,7 @@ header {
         inset 0 -3em 3em rgba(99, 16, 91, 0.205),
         0 0 0 2px rgb(185, 169, 189),
         0.3em 0.3em 1em rgba(194, 117, 206, 0.6);
-        ;
+    ;
 }
 
 
@@ -433,6 +434,7 @@ footer p {
     .nav-right ul li {
         margin: 8px;
     }
+
     .nav-right ul li a:hover {
         color: #72608b;
         font-size: 0.6rem;
