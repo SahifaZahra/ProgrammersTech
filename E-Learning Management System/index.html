@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTutor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"
+        integrity="sha512-oHBLR38hkpOtf4dW75gdfO7VhEKg2fsitvHZYHZjObc4BPKou2PGenyxA5ZJ8CCqWytBx5wpiSqwVEBy84b7tw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <i id="menu" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navLogo">TechTutor</div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="navButtons">
+            <button class="navbtn loginBtn">Login</button>
+            <button class="navbtn signupBtn">Register</button>
+
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="firstSection">
+            <div class="firstSectionContent">
+                <h1><span id="element"></span></h1>
+                <h2>Empower Your Learning Journey!!</h2>
+                <h2>TechTutor shapes future innovators through innovative learning solutions. Equip yourself with the
+                    skills and knowledge for tomorrow's tech challenges. <span class="joinUs">Join us and become a part
+                        of the future today!</span></h2>
+            </div>
+            <div class="imgCover"></div>
+        </section>
+        <section class="secondSection">
+            <div class="intro">
+                <h2><span id="about"></span></h2>
+                <p>At TechTutor, we are passionate about making high-quality tech education accessible to everyone.
+                    Our mission is to bridge the skills gap by providing comprehensive courses, expert guidance, and
+                    a supportive community. Whether you're starting your tech journey or looking to enhance your
+                    skills, TechTutor is here to support you every step of the way. Join us and take control of your
+                    tech future today.</p>
+                <a href="about.html">Read More..</a>
+            </div>
+            <div class="video">
+                <video src="assets/videos/video1.mp4" autoplay muted loop></video>
+            </div>
+        </section>
+        <section class="thirdSection">
+            <h1>Top Picks</h1>
+            <div class="popularCourses">
+                <a href="/">
+                    <div class="Course">
+                        <img src="assets/images/course1.png">
+                        <h4>HTML, CSS, JavaScript for Web Developers</h4>
+                    </div>
+                </a>
+
+                <div class="Course">
+                    <img src="assets/images/course2.jpg">
+                    <h4>Introduction to Java</h4>
+                </div>
+                <div class="Course">
+                    <img src="assets/images/course3.jpg">
+                    <h4>Introduction to Structured Query Language (SQL)</h4>
+                </div>
+                <div class="Course">
+                    <img src="assets/images/course4.png">
+                    <h4>Python Basics</h4>
+                </div>
+                <div class="Course">
+                    <img src="assets/images/course5.jpg">
+                    <h4>JavaScript for Web Development</h4>
+                </div>
+                <div class="Course">
+                    <img src="assets/images/course6.jpg">
+                    <h4>C for Everyone: Programming Fundamentals</h4>
+                </div>
+            </div>
+            <h2><a href="courses.html">Explore All Courses..</a></h2>
+        </section>
+        <section class="fourthSection">
+            <h1>What Our Students Say</h1>
+            <div class="Testimonals">
+                <div class="testimonal">
+                    <img src="assets/images/portrait1.jpeg">
+                    <h3>Emma Johnson</h3>
+                    <p>Software Engineer</p>
+                    <p><strong>Course:</strong> Full-Stack Web Development</p>
+                    <blockquote>"TechTutor transformed my career. The comprehensive curriculum and expert instructors
+                        were invaluable."</blockquote>
+                </div>
+                <div class="testimonal">
+                    <img src="assets/images/portrait2.jpg">
+                    <h3>Olivia Davis</h3>
+                    <p>Data Scientist</p>
+                    <p><strong>Course:</strong> Data Science Essentials</p>
+                    <blockquote>"The courses at TechTutor are top-notch. I gained practical skills that I use every day
+                        in my job."</blockquote>
+                </div>
+                <div class="testimonal">
+                    <img src="assets/images/portrait3.jpg">
+                    <h3>Emma Smith</h3>
+                    <p>Freelance Web Developer</p>
+                    <p><strong>Course:</strong>HTML, CSS, JavaScript for Web Developers</p>
+                    <blockquote>"TechTutor provided me with the foundational knowledge I needed to start my freelance
+                        career."</blockquote>
+                </div>
+            </div>
+        </section>
+        <section class="feedbackSection">
+            <div class="feedback">
+                <h2>We Value Your Feedback</h2>
+                <p>Your thoughts and suggestions help us improve. Please take a moment to share your feedback with us.
+                </p>
+            </div>
+            <form class="feedbackForm" id="feedback-form">
+                <input id="name" type="text" placeholder="Enter your Name" required>
+                <input id="email" type="email" placeholder="Enter your email" required>
+                <textarea id="feedback" rows="5" cols="60" placeholder="Share your Feedback" required></textarea>
+                <button type="Submit" class="feedbackBtn">Submit</button>
+            </form>
+            <p id="feedbackMessage">Feedback Submitted Successfully!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footerSocial">
+            <a href="https://linkedin.com/in/sahifa-zahra-4a2a1a2a1" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sahifa.zahra?igsh=MWR6aHZ1c2ZzMGFxcg==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sahifa.zehra.7?mibextid=kFxxJD" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:sahifazahra1@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 TechTutor. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Welcome to TechTutor!', 'Master Technology with TechTutor.', 'Welcome to TechTutor!'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#about', {
+            strings: ['Empowering Your Tech Journey!'],
+            typeSpeed: 50,
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTutor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"
+        integrity="sha512-oHBLR38hkpOtf4dW75gdfO7VhEKg2fsitvHZYHZjObc4BPKou2PGenyxA5ZJ8CCqWytBx5wpiSqwVEBy84b7tw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body class="aboutBody">
+    <nav>
+        <div class="icon">
+            <i id="menu" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navLogo">TechTutor</div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="navButtons">
+            <a><button class="navbtn loginBtn">Login</button></a>
+            <a><button class="navbtn signupBtn">Register</button></a>
+        </div>
+    </nav>
+    <main class="aboutMain">
+        <section class="about">
+            <h1><span id="aboutIntro"></span></h1>
+            <div class="aboutIntro">
+                <p>TechTutor shapes future innovators through innovative learning solutions. Equip yourself with the
+                    skills and knowledge for tomorrow's tech challenges. Join us and become a part
+                    of the future today!</p>
+            </div>
+        </section>
+        <section>
+            <div class="mission">
+                <h1><span id="mission"></span></h1>
+                <p>At TechTutor, our mission is to make high-quality tech education accessible to everyone. We strive to
+                    bridge the skills gap by providing comprehensive courses, expert guidance, and a supportive
+                    community. We focus on practical, hands-on learning experiences that prepare students for real-world
+                    challenges.</p>
+                <p>We believe in the transformative power of technology and aim to equip individuals with the skills and
+                    knowledge they need to succeed in a rapidly changing digital world.</p>
+            </div>
+        </section>
+        <section>
+            <div class="story">
+                <h1><span id="story"></span></h1>
+                <p class="storyHeading">The Beginning:</p>
+                <p>TechTutor was born out of a shared passion for technology and education. In 2023, a group of tech
+                    enthusiasts and educators came together with a vision to create a platform that would make
+                    high-quality tech education accessible to everyone. Recognizing the growing demand for tech skills
+                    and the barriers many face in acquiring them, we set out to bridge this gap.</p>
+                <p class="storyHeading">Growth & Expansion:</p>
+                <p>As demand for our courses grew, so did our team and offerings. We added new courses in areas such as
+                    data science, cybersecurity, and web development, ensuring that our curriculum remained relevant and
+                    comprehensive.</p>
+                <p class="storyHeading">Looking Ahead:</p>
+                <p>TechTutor continues to innovate and evolve. We are constantly updating our courses to keep pace with the latest technological advancements and expanding our team with passionate educators and industry experts. Our commitment to quality, accessibility, and community remains unwavering. As we look to the future, we aim to reach even more learners and help them achieve their tech career goals.</p>
+                <p> Join us at TechTutor and become a part of our story.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerSocial">
+            <a href="https://linkedin.com/in/sahifa-zahra-4a2a1a2a1" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sahifa.zahra?igsh=MWR6aHZ1c2ZzMGFxcg==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sahifa.zehra.7?mibextid=kFxxJD" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:sahifazahra1@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 TechTutor. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#aboutIntro', {
+            strings: ['About TechTutor'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#mission', {
+            strings: ['Our Mission', 'Empowering Your Tech Journey!', 'Our Mission'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#story', {
+            strings: ['The TechTutor Journey!', 'From Passion to Platform!', 'The TechTutor Journey!'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

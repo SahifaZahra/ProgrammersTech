@@ -1,0 +1,788 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 60px;
+    max-width: 100vw;
+    background-color: white;
+    color: rgb(12, 12, 53);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    border-bottom: 2px solid rgb(216, 208, 208);
+}
+
+.icon {
+    display: none;
+    font-size: 26px;
+}
+
+nav div {
+    margin: 20px;
+}
+
+.navLogo {
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(12, 12, 53);
+}
+
+nav ul li a:hover {
+    font-size: 20.5px;
+    text-decoration: underline;
+}
+
+.navButtons {
+    display: flex;
+    gap: 5px;
+}
+
+.navbtn {
+    padding: 8px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(12, 12, 53);
+    border: 2px solid rgb(12, 12, 53);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.navbtn:hover {
+    font-size: 14.5px;
+    background-color: rgb(12, 12, 53);
+    color: white;
+}
+
+.signupBtn {
+    background-color: rgb(12, 12, 53);
+    color: white;
+}
+.firstSection {
+    height: 70vh;
+    max-width: 100vw;
+    background-image: url(assets/images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.imgCover {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0px;
+}
+
+.firstSectionContent {
+    width: 60vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.firstSectionContent #element,
+.joinUs {
+    color: rgb(198, 198, 215);
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.firstSectionContent h2,
+.joinUs {
+    font-size: 24px;
+}
+
+.secondSection {
+    min-height: 40vh;
+    max-width: 100vw;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro {
+    color: rgb(12, 12, 53);
+}
+
+.intro #about {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.intro p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.intro a {
+    text-decoration: none;
+    color: rgb(12, 12, 53);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.video video {
+    height: 200px;
+    width: 350px;
+}
+
+.thirdSection {
+    min-height: 60vh;
+    max-width: 100vw;
+    margin: 60px auto;
+    color: rgb(12, 12, 53);
+}
+
+.thirdSection h1 {
+    font-size: 34px;
+    margin-left: 100px;
+}
+
+.popularCourses {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+
+}
+
+.popularCourses a {
+    text-decoration: none;
+    color: rgb(12, 12, 53);
+}
+
+.Course {
+    width: 250px;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: inset 0 -3em 3em white,
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(12, 12, 53);
+}
+
+.Course:hover,
+.Course img:hover {
+    width: 255px;
+}
+
+.Course img {
+    width: 250px;
+    height: 150px;
+}
+
+.Course h4 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.thirdSection h2 a {
+    font-size: 26px;
+    text-decoration: none;
+    color: rgb(12, 12, 53);
+    margin-left: 100px;
+
+}
+
+.thirdSection h2 a:hover {
+    text-decoration: underline;
+}
+
+.fourthSection {
+    min-height: 30vh;
+    max-width: 100vw;
+    margin: 60px auto;
+    color: rgb(12, 12, 53);
+}
+
+.fourthSection h1 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.Testimonals {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.testimonal {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgb(203, 203, 210);
+    padding: 15px;
+    color: rgb(12, 12, 53);
+    border-radius: 10px;
+}
+
+.testimonal h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testimonal p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonal blockquote {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.testimonal img {
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.testimonal img,
+h3,
+p,
+blockquote {
+    margin-top: 5px;
+}
+
+.feedbackSection {
+    width: 30vw;
+    min-width: 0vw;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgb(203, 203, 210);
+    color: rgb(12, 12, 53);
+    padding: 20px;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-size: 32px;
+
+}
+
+.feedback p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.feedbackForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbackForm input,
+.feedbackForm textarea {
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    border: 1px solid rgb(12, 12, 53);
+
+}
+
+.feedbackForm input:hover,
+.feedbackForm textarea:hover {
+    background-color: rgb(12, 12, 53);
+    color: white;
+}
+
+.feedbackBtn {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(12, 12, 53);
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feedbackBtn:hover {
+    font-size: 15px;
+}
+
+#feedbackMessage {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+}
+
+footer {
+    height: 10vh;
+    max-width: 100vw;
+    background-color: rgb(6, 6, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-top: 2px solid rgb(216, 208, 208);
+}
+
+.footerSocial a i {
+    color: white;
+    margin: 3px;
+    font-size: 16px;
+}
+
+.copyright {
+    font-size: 16px;
+}
+
+/* ================================== */
+/*        About Page Styles           */
+/* ================================== */
+.aboutBody
+{
+    background-color: rgb(12, 12, 53);
+    color: white;
+}
+.aboutMain {
+    max-width: 100vw;
+    margin: 20px auto;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.aboutIntro p {
+    width: 70vw;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.mission {
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+.mission h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+.mission p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.story {
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+.story h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.story p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.story .storyHeading {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+
+}
+/* ================================== */
+/*        Contact Page Styles           */
+/* ================================== */
+.contactSection {
+    height: auto;
+    width: 30vw;
+    background-color: rgb(12, 12, 53);
+    color: white;
+    margin:30px auto;
+    padding: 50px;
+    box-shadow: 0 0 10px rgb(12, 12, 53);
+}
+
+.contactSection h2,
+h4 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.contactSection h2 {
+    font-size: 34px;
+    font-weight: 700;
+}
+.contactSection h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 80%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.contact-btn {
+    height: 40px;
+    width: 200px;
+    background-color: rgba(12, 12, 50, 0.9);
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contact-btn:hover {
+    font-size: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.contactForm input:hover,
+.contactForm textarea:hover {
+    background-color: rgb(12, 12, 53);
+    color: white;
+}
+#contactMessageSubmision {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+}
+@media screen and (max-width:1030px) {
+    nav {
+        max-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0px 0px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .icon,
+    .navLogo {
+        display: flex;
+    }
+
+    .icon {
+        cursor: pointer;
+    }
+
+    .icon,
+    .navLogo,
+    .navButtons {
+        margin: auto 15px;
+    }
+
+    .navButtons {
+        margin-left: auto;
+    }
+
+    .navLogo {
+        font-size: 26px;
+        margin-left: 0px;
+    }
+
+    .navbtn {
+        padding: 8px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .navbtn:hover {
+        font-size: 13px;
+    }
+
+    .showData {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: white;
+        height: 80vh;
+        width: 60vw;
+        border-right: 2px solid rgb(216, 208, 208);
+        ;
+        border-bottom: 2px solid rgb(216, 208, 208);
+        ;
+
+
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        color: rgb(12, 12, 53);
+    }
+
+    nav ul li a:hover {
+        font-size: 16.5px;
+        text-decoration: underline;
+    }
+
+    .firstSection {
+        height: 60vh;
+    }
+
+    .firstSectionContent {
+        width: 80vw;
+    }
+
+    .firstSectionContent #element,
+    .joinUs {
+        font-size: 22px;
+    }
+
+    .firstSectionContent h2,
+    .joinUs {
+        font-size: 14px;
+    }
+
+    .secondSection {
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .intro #about {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .intro a {
+        font-size: 14px;
+    }
+
+    .thirdSection h1 {
+        text-align: center;
+        margin-left: 0px;
+        font-size: 28px;
+    }
+
+    .popularCourses {
+        width: 90vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Course {
+        width: 150px;
+        height: auto;
+        margin: 20px auto;
+        box-shadow: inset 0 -3em 3em white,
+            0 0 0 2px white,
+            0.3em 0.3em 1em rgb(12, 12, 53);
+    }
+
+    .Course:hover,
+    .Course img:hover {
+        width: 155px;
+    }
+
+    .Course img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .Course h4 {
+        font-size: 12px;
+    }
+
+    .thirdSection h2 a {
+        font-size: 16px;
+    }
+
+    .fourthSection {
+        min-height: 30vh;
+        max-width: 100vw;
+        margin: 60px auto;
+        color: rgb(12, 12, 53);
+    }
+
+    .fourthSection h1 {
+        font-size: 28px;
+    }
+
+    .Testimonals {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .feedbackSection {
+        min-width: 60vw;
+
+    }
+
+    .footerSocial a i {
+        margin: 2px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    /* ================================== */
+    /*        About Page Styles           */
+    /* ================================== */
+
+    .about h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .aboutIntro p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
+    .mission {
+        max-width: 80vw;
+        margin: 10px auto;
+    }
+
+    .mission h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .mission p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .story h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .story p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .story .storyHeading {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0px 10px 0px;
+
+    }
+    /* ================================== */
+/*        Contact Page Styles           */
+/* ================================== */
+.contactSection {
+    width: 70vw;
+    margin:40px auto;
+    padding: 30px;
+}
+
+.contactSection h2,
+h4 {
+    margin: 15px auto;
+}
+
+.contactSection h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.contactSection h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-btn {
+    height: 40px;
+    width: 180px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contact-btn:hover {
+    font-size: 14.5px;
+}
+
+}
