@@ -15,7 +15,6 @@ html {
 header {
     background-color: rgba(32, 11, 40, 0.77);
     color: #d0c7de;
-    ;
     display: flex;
     justify-content: space-around;
     align-items: center;
