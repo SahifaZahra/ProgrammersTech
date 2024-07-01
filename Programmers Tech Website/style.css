@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 60px;
+    max-width: 100vw;
+    background-color: white;
+    color: rgb(13, 59, 59);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.icon {
+    display: none;
+    font-size: 26px;
+}
+
+nav div {
+    margin: 20px;
+}
+
+.navLogo {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(13, 59, 59);
+}
+
+nav ul li a:hover {
+    font-size: 20.5px;
+    text-decoration: underline;
+}
+
+.navButtons {
+    display: flex;
+    gap: 5px;
+}
+
+.navbtn {
+    padding: 8px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(13, 59, 59);
+    border: 2px solid rgb(13, 59, 59);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.navbtn:hover {
+    font-size: 14.5px;
+    background-color: rgb(13, 59, 59);
+    color: white;
+}
+
+.signupBtn {
+    background-color: rgb(13, 59, 59);
+    color: white;
+}
+
+.firstSection {
+    height: 100vh;
+    max-width: 100vw;
+    background-image: url(assets/images/mainImg.png);
+    position: relative;
+}
+
+.imgCover {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.75;
+    position: absolute;
+    top: 0px;
+}
+
+.firstSectionContent {
+    width: 60vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.firstSectionContent #element {
+    font-size: 32px;
+    font-weight: 900;
+}
+.faq{
+    max-width: 60vw;
+    margin: 20px auto;
+    text-align: left;
+    padding: 40px 20px;
+    box-shadow: 0 0 10px rgb(203, 203, 210);
+}
+
+.faq h2 {
+    font-size: 34px;
+    font-weight: 900;
+    color: rgb(13, 59, 59);
+    text-align: center;
+}
+.faq-item {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(13, 59, 59);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: rgb(13, 59, 59);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq-answer.open {
+    display: block;
+}
+
+.toggle-icon {
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(13, 59, 59);
+}
+
+footer {
+    height: 10vh;
+    max-width: 100vw;
+    background-color: rgb(17, 50, 50);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-top: 2px solid white;
+}
+
+.footerSocial a i {
+    color: white;
+    margin: 3px;
+    font-size: 16px;
+}
+
+.copyright {
+    font-size: 16px;
+}
+
+/* ================================== */
+/*        About Page Styles           */
+/* ================================== */
+.aboutBody {
+    background-color: rgb(13, 59, 59);
+    color: white;
+}
+
+.aboutMain {
+    max-width: 100vw;
+    margin: 20px auto;
+
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.aboutIntro p {
+    width: 70vw;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.mission {
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+.mission h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+.mission p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.commitments {
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+.commitments h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.commitments p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.commitments .commitmentHeading {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.commitments .programs {
+    margin-left: 15px;
+}
+
+
+/* ================================== */
+/*        Contact Page Styles           */
+/* ================================== */
+.contactSection {
+    height: auto;
+    width: 30vw;
+    background-color: rgb(17, 50, 50);
+    color: white;
+    margin: 20px auto;
+    padding: 50px;
+    box-shadow: 0 0 10px rgb(17, 50, 50);
+}
+
+.contactSection h2,
+h4 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.contactSection h2 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.contactSection h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 80%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.contact-btn {
+    height: 40px;
+    width: 200px;
+    background-color: rgba(17, 50, 50, 0.9);
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contact-btn:hover {
+    font-size: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.contactForm input:hover,
+.contactForm textarea:hover {
+    background-color: rgb(17, 50, 50);
+    color: white;
+}
+
+#contactMessageSubmision {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+}
+
+/* ================================== */
+/*        Services Page Styles           */
+/* ================================== */
+
+.servicesPage {
+
+    color:rgb(17, 50, 50);
+}
+
+.servicesMain {
+    max-width: 100vw;
+    margin: 20px auto;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.servicesIntro p {
+    width: 70vw;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+}
+
+.servicesSection {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.service {
+    width: 280px;
+    height: auto;
+    margin: 20px auto;
+    background-color: rgb(17, 50, 50);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    padding: 10px;
+}
+
+.service:hover {
+    font-size: 1.01em;
+    cursor: pointer;
+}
+
+.featuresHeading,
+.benefitsHeading {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.features,
+.benefits {
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1030px) {
+    nav {
+        max-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0px 0px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .icon,
+    .navLogo {
+        display: flex;
+    }
+
+    .icon {
+        cursor: pointer;
+    }
+
+    .icon,
+    .navLogo,
+    .navButtons {
+        margin: auto 15px;
+    }
+
+    .navButtons {
+        margin-left: auto;
+    }
+
+    .navLogo {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .navbtn {
+        padding: 8px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .navbtn:hover {
+        font-size: 13px;
+    }
+
+    .showData {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: white;
+        height: 80vh;
+        width: 60vw;
+        border-right: 2px solid rgb(216, 208, 208);
+        ;
+        border-bottom: 2px solid rgb(216, 208, 208);
+        ;
+
+
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        color: rgb(13, 59, 59);
+    }
+
+    nav ul li a:hover {
+        font-size: 16.5px;
+        text-decoration: underline;
+    }
+
+    .firstSectionContent {
+        width: 80vw;
+    }
+
+    .firstSectionContent #element,
+    .joinUs {
+        font-size: 22px;
+    }
+
+    .firstSectionContent h2,
+    .joinUs {
+        font-size: 14px;
+    }
+    .faq{
+        max-width: 80vw;
+    }
+    
+    .faq h2 {
+        font-size: 24px;
+        font-weight: 900;
+    }
+    .faq-question {
+        font-size: 14px;
+    }
+    
+    .faq-answer {
+        font-size: 12px;
+    }
+    
+    .toggle-icon {
+        font-size: 20px;
+    }
+
+    .footerSocial a i {
+        margin: 2px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    /* ================================== */
+    /*        About Page Styles           */
+    /* ================================== */
+
+    .about h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .aboutIntro p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .mission {
+        max-width: 80vw;
+        margin: 10px auto;
+    }
+
+    .mission h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .mission p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .commitments h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .commitments p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .commitments .commitmentHeading {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0px 10px 0px;
+
+    }
+
+
+    /* ================================== */
+    /*        Contact Page Styles           */
+    /* ================================== */
+    .contactSection {
+        width: 70vw;
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .contactSection h2,
+    h4 {
+        margin: 15px auto;
+    }
+
+    .contactSection h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .contactSection h4 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+    .contact-btn {
+        height: 40px;
+        width: 180px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .contact-btn:hover {
+        font-size: 14.5px;
+    }
+
+    /* ================================== */
+    /*        Services Page Styles           */
+    /* ================================== */
+
+
+
+    .services h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .servicesIntro p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .servicesSection {
+        width: 90vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        width: 300px;
+        height: auto;
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgb(203, 203, 210);
+        padding: 10px;
+    }
+
+    .service:hover {
+        font-size: 1.01em;
+        cursor: pointer;
+    }
+    .featuresHeading,
+    .benefitsHeading {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 20px;
+    }
+
+    .features,
+    .benefits {
+        margin-left: 10px;
+    }
+
+
+
+}

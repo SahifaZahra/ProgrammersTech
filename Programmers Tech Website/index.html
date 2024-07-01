@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"
+        integrity="sha512-oHBLR38hkpOtf4dW75gdfO7VhEKg2fsitvHZYHZjObc4BPKou2PGenyxA5ZJ8CCqWytBx5wpiSqwVEBy84b7tw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <i id="menu" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navLogo">Programmers Tech</div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="navButtons">
+            <button class="navbtn loginBtn">Login</button>
+            <button class="navbtn signupBtn">Register</button>
+
+        </div>
+    </nav>
+    <main>
+        <section class="firstSection">
+            <div class="firstSectionContent">
+                <h1><span id="element"></span></h1>
+                <h2>Empowering Career Growth at ProgrammersTech</h2>
+                <h2>At ProgrammersTech, we're dedicated to nurturing talent and fostering career advancement. Through
+                    targeted upskilling initiatives and personalized development plans, we equip our employees with the
+                    skills and knowledge needed to excel in their roles.</h2>
+            </div>
+            <div class="imgCover"></div>
+        </section>
+        <section class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What services do you offer? <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer a wide range of tech solutions including web development, app development, MERN stack,
+                        AI, machine learning, and Flutter development.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does it take to develop a custom website? <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        The timeline varies based on the complexity of the project. Typically, a custom website can take
+                        anywhere from 4 to 12 weeks.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you provide ongoing support and maintenance? <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we offer comprehensive support and maintenance services to ensure your tech solutions run
+                        smoothly.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What technologies do you specialize in? <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We specialize in a variety of technologies including React, Node.js, MongoDB, Express.js,
+                        Flutter, and various AI and machine learning frameworks.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can you help with digital marketing? <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        While our primary focus is on tech solutions, we do collaborate with digital marketing experts
+                        to provide a comprehensive solution for our clients.
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerSocial">
+            <a href="https://www.linkedin.com/company/programmerstechit/posts/?feedView=all" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:programmersTech.it@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 ProgrammersTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Welcome to ProgrammersTech'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#testimonal', {
+            strings: ['What Our Clients Say'],
+            typeSpeed: 50,
+        });
+
+    </script>
+</body>
+
+</html>
